@@ -13,3 +13,10 @@ if (closeBtn) {
         sidebar.style.right = "-300px";
     });
 }
+
+// 2. API LINKS
+
+const CATEGORIES_API = "https://www.themealdb.com/api/json/v1/1/categories.php";
+const SEARCH_API = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
+const FILTER_API = "https://www.themealdb.com/api/json/v1/1/filter.php?c=";
+const DETAILS_API = "https://www.themealdb.com/api/json/v1/1/lookup.php?i=";

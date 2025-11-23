@@ -58,3 +58,36 @@ body {
     border-bottom: 1px solid #ddd;
     cursor: pointer;
 }
+
+/* Hero */
+.hero {
+    height: 350px;
+    background: url('../assests/images/foodmunch_kitchen.jpg') center/cover;
+    text-align: center;
+    color: white;
+    padding-top: 80px;
+}
+
+.search-wrapper {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.search-wrapper input {
+    width: 300px;
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+
+.search-btn {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background: #e86528;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
