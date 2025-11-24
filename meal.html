@@ -4,19 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meals</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- HEADER-- NAVBAR-->
-    <header class="navbar">
-        <div class="logo"><i class="fa-solid fa-house"></i> MEAL FINDER</div>
-    </header>
-    
-    <section class="section">
-        <div id="mealDetails"></div>
-    </section>
+  <header class="navbar">
+    <a href="index.html" class="logo">
+      <i class="fa-solid fa-house"></i>
+      <span>MEAL FINDER</span>
+    </a>
+    <button id="toggleBtn" class="icon-btn"><i class="fa-solid fa-bars"></i></button>
+  </header>
 
+  <!-- HAMBURGER -->
+<aside id="sidebar" class="sidebar" aria-hidden="true">
+    <button id="closeBtn" class="close-icon" aria-label="Close menu"><i class="fa-solid fa-circle-xmark"></i></button>
+    <div class="side-header">
+       
+    </div>
+    <ul id="sideList" class="side-list"></ul>
+</aside>
+
+  <!-- HERO  -->
+  <div class="hero-banner">
+    <img src="./assests/images/image.png"  alt="hero" />
+  </div>
+
+  <main class="section page-content">
+    <h2 class="page-title">MEAL DETAILS</h2>
+
+    <!--MEAL HEADER-->
+    <div class="mini-hero">
+      <div class="mini-inner">
+
+        <a href="index.html" class="mini-logo" id="miniLogo">
+          <i class="fa-solid fa-house"></i>
+          <span id="miniTitle">MEAL FINDER</span>
+        </a>
+
+        <button class="mini-menu icon-btn"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+
+    <!-- FULL MEAL DETAILS -->
+    <div id="mealDetails" class="meal-details"></div>
+
+    <!-- BOTTOM CATEGORIES -->
+    <section class="section categories-section">
+      <div class="section-header">
+        <h2>CATEGORIES</h2>
+        <div class="underline"></div>
+      </div>
+      <div id="categoryList" class="grid"></div>
+    </section>
+  </main>
     
 
     <script src="app.js"></script>

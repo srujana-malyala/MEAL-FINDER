@@ -4,41 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meal Finder</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
     <!-- HEADER-- NAVBAR-->
     <header class="navbar">
         <div class="logo"><i class="fa-solid fa-house"></i> MEAL FINDER</div>
-        <i id="toggleBtn" class="fa-solid fa-bars menu-icon"></i> 
+         <div class="nav-actions">
+        <button id="toggleBtn" class="icon-btn"><i class="fa-solid fa-bars menu-icon"></i></button> 
+         </div>
     </header>
 
-    <!-- TOGGLE-->
+    <!--HAMBURGER-->
     <aside id="sidebar" class="sidebar">
         <i id="closeBtn" class="fa-solid fa-circle-xmark close-icon"></i>
-        <ul id="sideList"></ul>
+        <div class="side-header">
+    </div>
+        <ul id="sideList" class="side-list"></ul>
     </aside>
 
      <!-- HERO -->
     <section class="hero">
-        <div class="search-wrapper">
-            <input id="searchInput" type="text" placeholder="Search recipes here ...">
-            <button id="searchBtn" class="search-btn">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
+        <div class="hero-inner">
+         <div class="search-wrapper">
+            <input id="searchInput" class="search-input" type="text" placeholder="Search recipes here ...">
+            <button id="searchBtn" class="search-btn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i> </button>
+         </div>
+        <h1 class="hero-title">What are your favorite cuisines?</h1>
+        <p class="hero-title">PERSONALIZE YOUR EXPERIENCE</p>
         </div>
-        <br>
-        <h1>What are your favorite cuisines?</h1>
-        <br><br>
-        <p>PERSONALIZE YOUR EXPERIENCE</p>
     </section>
 
 
      <!-- CATEGORIES -->
     <section class="section">
+        <div class="section-header">
         <h2>CATEGORIES</h2>
+        <div class="underline"></div>
+    </div>
+
         <div id="categoryList" class="grid"></div>
     </section>
 
